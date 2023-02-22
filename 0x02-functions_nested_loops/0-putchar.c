@@ -1,14 +1,19 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - check the code
+ * main - Printing _putchar with Putchar
  *
  * Return: Always 0.
  */
-#include <stdio.h>
 
 int main(void)
 {
-	printf("_putchar\n");
+	char put[] = "_putchar";
+
+	for (int i = 0; i <= 8; i++)
+	{
+		putchar(put[i]);
+	}
+	putchar('\n');
 	return (0);
 }
