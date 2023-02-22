@@ -8,12 +8,6 @@
 
 int main(void)
 {
-	char put[] = "_putchar";
-	int i;
-
-	for (i = 0; i <= 8; i++)
-	{
-		putchar(put[i]);
-	}
+	printf("_putchar\n")
 	return (0);
 }
