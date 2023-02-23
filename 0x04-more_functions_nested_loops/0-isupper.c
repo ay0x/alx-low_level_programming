@@ -2,7 +2,7 @@
 
 /**
  * _isupper - Entry point
- * Description: checks character is a letter, lowercase or uppercase
+ * Description: checks character is a letter.
  * @c: the integer value it receives
  * Return: 1 if true. 0 if false.
  */
