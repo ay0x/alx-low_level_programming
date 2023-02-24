@@ -2,8 +2,7 @@
 
 /**
  * more_numbers - nmbr fct
- * Bwave ICT file
- * Return: no return
+ * Description: prints 10 times the numbers, from 0 to 14
  */
 
 void more_numbers(void)
