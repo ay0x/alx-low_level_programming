@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * more_numbers - Entry point
- * Description: prints 10 times the numbers, from 0 to 14
+ * more_numbers - nmbr fct
+ * Bwave ICT file
+ * Return: no return
  */
 
 void more_numbers(void)
 {
-	char num[] = "1234567891011121314";
-	int i;
-	int j;
 
-	for (j = 0; j <= 10; j++)
+int i, j;
+	for (i = 1; i <= 10; i++)
 	{
-	for (i = 0; i <= 18; i++)
-	{
-		_putchar(num[i]);
-	}
-	_putchar('\n');
-	}
-
+		for (j = 0; j <= 14; j++)
+		{
+			if (j >= 10)
+			_putchar('1');
+			_putchar(j % 10 + '0');
+		}
+			_putchar('\n');
+		}
 }
