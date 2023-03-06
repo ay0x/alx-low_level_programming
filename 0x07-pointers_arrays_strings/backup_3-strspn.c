@@ -10,21 +10,29 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int z = 0, x, y;
-
-	for (x = 0; s[x] != '\0'; x++)
+	unsigned int count = 0;
+	unsigned int i;
+	while (*s != '\0')
 	{
-		if (s[x] != 32)
-		{
-			for (y = 0; accept[y] != '\0'; y++)
-			{
-				if (s[x] == accept[y])
-					z++;
-			}
-		}
-		else
-			return (z);
-	}
-		return (z);
+	int found = 0;
 
+	for (i = 0; accept[i] != '\0'; i++)
+	{
+		if (*s == accept[i])
+		{
+		found = 1;
+		break;
+		}
+	}
+
+	if (!found)
+	{
+		return (count);
+	}
+
+	s++;
+	count++;
+	}
+
+	return (count);
 }
