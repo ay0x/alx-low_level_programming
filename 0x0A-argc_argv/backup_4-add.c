@@ -21,17 +21,15 @@ int main(int argc, char **argv)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			char *endptr;
-
-			long num = strtol(argv[i], &endptr, 10);
-
-
-			if (*endptr != '\0')
+			if (atoi(argv[i]) == 0)
 			{
 				printf("Error\n");
 				return (1);
 			}
-			sum += (int)num;
+			else
+			{
+			sum += atoi(argv[i]);
+			}
 
 		}
 		printf("%d\n", sum);
