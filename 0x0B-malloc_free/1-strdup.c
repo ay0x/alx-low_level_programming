@@ -28,6 +28,11 @@ char *_strdup(char *str)
 
 	dup = (char *)malloc(sizeof(char) * (str_len + 1));
 
+	if (dup == NULL)
+	{
+		return (NULL);
+	}
+
 	for (i = 0; i < str_len; i++)
 	{
 		dup[i] = str[i];
