@@ -17,9 +17,9 @@ int i, j;
 int total_len = 0;
 
 if (s1 == NULL)
-	s1 = " ";
+	s1 = "";
 if (s2 == NULL)
-	s2 = " ";
+	s2 = "";
 
 while (s1[str_len1] != '\0')
 {
