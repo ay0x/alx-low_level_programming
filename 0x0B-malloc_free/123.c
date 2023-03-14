@@ -10,12 +10,11 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-char *concat;
+char *concatenate;
 int str_len1 = 0;
 int str_len2 = 0;
-int i = 0;
-int j = 0;
-int total_len;
+int i, j;
+int total_len = 0;
 
 if (s1 == NULL)
 	s1 = "";
@@ -32,19 +31,19 @@ while (s2[str_len2] != '\0')
 }
 total_len = str_len1 + str_len2;
 
-concat = (char *)malloc(sizeof(char) * total_len + 1);
+concatenate = (char *)malloc(sizeof(char) * total_len + 1);
 
 for (i = 0; i < str_len1; i++)
 {
-concat[i] = s1[i];
+concatenate[i] = s1[i];
 }
 
-for (j = 0; j < str_len2; i++, j++)
+for (j = 0; j < str_len2; j++)
 {
-	concat[i] = s2[j];
+	concatenate[i + j] = s2[j];
 }
 
-if (concat == NULL)
+if (concatenate == NULL)
 	return (NULL);
-return (concat);
+return (concatenate);
 }
