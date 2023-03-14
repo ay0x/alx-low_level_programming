@@ -31,7 +31,7 @@ while (s2[str_len2] != '\0')
 }
 total_len = str_len1 + str_len2;
 
-concatenate = (char *)malloc(sizeof(char) * total_len + 1);
+concatenate = (char *)malloc(sizeof(char) * (total_len + 1));
 
 for (i = 0; i < str_len1; i++)
 {
