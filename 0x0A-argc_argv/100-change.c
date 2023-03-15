@@ -22,14 +22,14 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	total = strtol(argv[1], &p, 10);
+	total = atoi(argv[1]);
 	count = 0;
 
-	if (!*p)
+	if (total > 0)
 	{
 		while (total > 1)
 		{
-			for (i = 0; i < sizeof(cents[i]); i++)
+			for (i = 0; i < sizeof(cents) / sizeof(cents[0]); i++)
 			{
 				if (total >= cents[i])
 				{
