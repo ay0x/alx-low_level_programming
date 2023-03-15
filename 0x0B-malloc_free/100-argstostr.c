@@ -30,7 +30,7 @@ str_len++;
 str_len++;
 }
 
-argz = malloc(sizeof(char) * str_len);
+argz = malloc(sizeof(char) * str_len + 1);
 
 if (argz == NULL)
 {
