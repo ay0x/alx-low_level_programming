@@ -36,6 +36,15 @@ for (i = 0; i < height; i++)
 {
 	for (j = 0; j < width; j++)
 	{
+		if (arr[i] == NULL)
+		{
+			for (j = i - 1; j >= 0; j--)
+			{
+				free(arr[j]);
+			}
+			free(arr);
+			return (NULL);
+		}
 	arr[i][j] = 0;
 	}
 }
