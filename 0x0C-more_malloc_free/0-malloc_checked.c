@@ -14,7 +14,8 @@ void *mallock = malloc(b);
 
 if (mallock == NULL)
 {
-exit (98);
+exit(98);
 }
+
 return (mallock);
 }
