@@ -11,13 +11,12 @@
 
 void print_dog(struct dog *d)
 {
-	char not_available[] = "(nil)";
 
 	if (d != NULL)
 	{
 		if (d->name == NULL)
 		{
-			printf("Name: %s\n", not_available);
+			printf("Name: (nil)\n");
 		}
 		else
 		{
@@ -26,7 +25,7 @@ void print_dog(struct dog *d)
 
 		if (d->age == 0.0)
 		{
-			printf("Age: %s\n", not_available);
+			printf("Age: (nil)\n";
 		}
 		else
 		{
@@ -35,7 +34,7 @@ void print_dog(struct dog *d)
 
 		if (d->owner == NULL)
 		{
-			printf("Owner: %s\n", not_available);
+			printf("Owner: (nil)\n");
 		}
 		else
 		{
