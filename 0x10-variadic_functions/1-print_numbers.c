@@ -5,8 +5,9 @@
 /**
  * print_numbers - Entry point
  * Description: Prints numbers, followed by a new line
- * @separator: Separator
+ * @separator: Separator between the numbers
  * @n: Number of arguments
+ * @...: List of integers
  * Return: Void
 */
 
