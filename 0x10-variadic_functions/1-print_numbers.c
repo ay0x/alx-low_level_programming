@@ -12,6 +12,8 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+if (separator)
+{
 unsigned int i;
 va_list my_list;
 
@@ -29,4 +31,5 @@ for (i = 0; i < n; i++)
 }
 va_end(my_list);
 printf("\n");
+}
 }
