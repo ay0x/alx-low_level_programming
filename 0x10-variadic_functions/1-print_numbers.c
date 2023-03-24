@@ -12,12 +12,15 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-if (separator)
-{
 unsigned int i;
 va_list my_list;
 
 va_start(my_list, n);
+
+if (separator == NULL)
+{
+	separator = "";
+}
 
 for (i = 0; i < n; i++)
 {
@@ -29,7 +32,6 @@ for (i = 0; i < n; i++)
 	printf("%s", separator);
 	}
 }
-va_end(my_list);
 printf("\n");
-}
+va_end(my_list);
 }
