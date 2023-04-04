@@ -16,7 +16,6 @@ size_t print_listint(const listint_t *h)
 
 	if (ptr == NULL)
 	{
-		printf("Error\n");
 		return (1);
 	}
 
