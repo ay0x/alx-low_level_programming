@@ -2,10 +2,10 @@
 
 /**
  * listint_len - Entry point
- * Desctription: The number of elements in a linked listint_t list.
- * @h: head pointer
- * Return: The number of elements
- */
+ * Description: Returns number of elements in the list
+ * @h: Head pointer
+ * Return: Number of elements
+*/
 
 size_t listint_len(const listint_t *h)
 {
@@ -13,8 +13,8 @@ size_t listint_len(const listint_t *h)
 
 	while (h != NULL)
 	{
-	h = h->next;
+		h = h->next;
 		count++;
 	}
-	return (count);
+return (count);
 }
