@@ -13,8 +13,7 @@ int main(int argc, char **argv)
 {
 	int total, count;
 	unsigned int i;
-	char *p;
-	int cents[] = {25, 10, 5, 2};
+	int cents[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -27,7 +26,7 @@ int main(int argc, char **argv)
 
 	if (total > 0)
 	{
-		while (total > 1)
+		while (total > 0)
 		{
 			for (i = 0; i < sizeof(cents) / sizeof(cents[0]); i++)
 			{
