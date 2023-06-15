@@ -3,18 +3,19 @@
 
 /**
  * malloc_checked - Entry point
- * Description: Creates memory allocation. Returns 98 on malloc failure.
- * @b: Malloc size
- * return: pointer to memory alocation
-*/
+ * Description: Allocates memory
+ * @b: Number of memory
+ * Return: Pointer to the address
+ */
 
 void *malloc_checked(unsigned int b)
 {
-	void *ptr = malloc(b);
+void *mallock = malloc(b);
 
-	if (ptr == NULL)
-	{
-		exit(98);
-	}
-	return (ptr);
+if (mallock == NULL)
+{
+exit(98);
+}
+
+return (mallock);
 }
