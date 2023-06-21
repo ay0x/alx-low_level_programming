@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * print_name - Entry point
  * Description: Function that prints a name
@@ -8,7 +10,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (f)
+	if (f != NULL && name != NULL)
 	{
 		f(name);
 	}
