@@ -8,7 +8,7 @@
  * @head: pointer to the beginning of a listint_t list
  * @n: integer data
  *
- * Return: pointer to the new created nod .
+ * Return: pointer to the new created new.
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
